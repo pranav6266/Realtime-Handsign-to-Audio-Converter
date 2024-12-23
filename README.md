@@ -21,3 +21,4 @@ This is a project which can detect alphabets and certain words of ASL(American S
 * The only signs these models can detect are given in label files(refer these files for words).
 * The words "Fine" and "Mother/Father" have low accuracy because the hand points cannot be detected Properly.
 * The letters "J" and "Z" are not included because they have motion in them and these models are trained using static images.
+* Once an alphabet or a word is detected and spoken, it will not give the audio output again of the prediction. This has been done to stop the repetitive audio output of the same prediction.
