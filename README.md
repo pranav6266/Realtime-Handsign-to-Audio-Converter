@@ -11,7 +11,9 @@ This is a project which can detect alphabets and certain words of ASL(American S
   3. mediapipe: For MediaPipe functionality.
   4. numpy: For numerical computations.
   5. tkinter: Included with Python's standard library; no installation required unless you're using a minimal Python distribution.
-  6. pyttsx3: For text-to-speech functionality. 
+  6. pyttsx3: For text-to-speech functionality.
+* Run the file and show a hand sign.
+* Wait for 3-5 seconds and if the accuracy of the sign is more than 50% for more than 10 frames, it will give an audio output.(this can be altered inside the code.) 
 
 
 
