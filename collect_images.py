@@ -3,6 +3,7 @@ import cv2
 import time
 
 # ASL Hand Signs (excluding J and Z)
+# To collect the words, you have to change the class names to required names of the words.
 ASL_SIGNS = [
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 
     'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 
@@ -14,7 +15,7 @@ if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
 # Number of images to collect per sign
-DATASET_SIZE = 1000  # Increased to 1000 per sign
+DATASET_SIZE = 1000  
 
 def collect_sign_images():
     # Open the camera
