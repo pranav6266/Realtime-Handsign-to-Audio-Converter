@@ -53,23 +53,11 @@ class HandSignRecognizer:
     def should_speak_prediction(self, prediction, confidence):
         current_time = time.time()
         
-        # Debug print for incoming prediction
-        # print(f"Received prediction: {prediction} with confidence: {confidence:.2f}")
-        
         # Add current prediction to queue
         self.prediction_queue.append((prediction, confidence))
         
-        # Only proceed if we have enough predictions
-        # if len(self.prediction_queue) < 30:  # 2 seconds worth of predictions
-        #     print(f"Building prediction queue: {len(self.prediction_queue)}/30")
-        #     return False
-            
-        # Check if all predictions in last 2 seconds are the same
-        # and have confidence > 60%
+        # Check if all predictions in last 2 seconds are the same and have confidence > 50%
         recent_predictions = [p for p, c in self.prediction_queue if p == prediction and c > 0.50]
-        
-        # print(f"Matching high-confidence predictions: {len(recent_predictions)}/30")
-        # print(f"Time since last spoken: {current_time - self.last_spoken_time:.2f} seconds")
         
         # If we have consistent high-confidence predictions and haven't spoken recently
         if (len(recent_predictions) >= 10 and  # Allow for some frames of error
