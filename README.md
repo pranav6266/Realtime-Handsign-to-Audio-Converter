@@ -1,5 +1,5 @@
 # Realtime-Handsign-to-Audio-Converter
-This is a project which can detect alphabets and certain words of ASL(American Sign Language) and give audio output in real time.\
+This is a project which can detect alphabets and certain words of ASL(American Sign Language) and give audio output in real time.
 
 ## Instructions to use this repo
 * Open the folder in any IDE or VS Code Text Editor and run the hand-sign-recognizer_copy.py
