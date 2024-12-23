@@ -3,7 +3,7 @@ This is a project which can detect alphabets and certain words of ASL(American S
 
 ## Instructions to use this repo
 * Open the folder in any IDE or VS Code Text Editor and run the hand-sign-recognizer_copy.py
-* Run this command in Terminal pip install pickle-mixin opencv-python mediapipe numpy tkinter pyttsx3(make sure you have selected the correct Python Environment)
+* Run this command in Terminal "pip install pickle-mixin opencv-python mediapipe numpy tkinter pyttsx3"(make sure you have selected the correct Python Environment)
 * Make sure you have all the libraries installed in your environment.
 * Required libraries are
   1. pickle: The Python standard library includes pickle, so no need to install it separately.
