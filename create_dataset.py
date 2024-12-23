@@ -5,7 +5,7 @@ import mediapipe as mp
 import cv2
 from tqdm import tqdm  
 
-def process_hand_landmarks(data_dir, output_file='data.pickle', min_confidence=0.3, max_hands=1):
+def process_hand_landmarks(data_dir, output_file='data.pickle', min_confidence=0.3, max_hands=1): #You can change the max hands accordingly
     # Initialize MediaPipe Hands
     mp_hands = mp.solutions.hands
     hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=min_confidence, max_num_hands=max_hands)
